@@ -1,4 +1,4 @@
-import 'package:cmp/layers/domain/entities/chapels_entity.dart';
+import 'package:cmp/layers/domain/entities/chapel_entity.dart';
 import 'package:flutter/material.dart';
 
 class ParishEntity {
