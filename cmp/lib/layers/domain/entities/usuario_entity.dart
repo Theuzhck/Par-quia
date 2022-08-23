@@ -2,14 +2,14 @@ import 'dart:ffi';
 
 import 'package:cmp/layers/domain/entities/parish_entity.dart';
 
-class User {
+class UserEntity {
   String userName;
   DateTime lastConfession;
-  Parish mainParish;
+  ParishEntity mainParish;
   Bool systemAdministrator;
   Bool userGuess;
   Bool parishAdministrator;
-  User({
+  UserEntity({
     required this.userName,
     required this.lastConfession,
     required this.mainParish,

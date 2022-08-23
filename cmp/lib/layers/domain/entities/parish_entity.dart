@@ -1,7 +1,7 @@
 import 'package:cmp/layers/domain/entities/chapels_entity.dart';
 import 'package:flutter/material.dart';
 
-class Parish {
+class ParishEntity {
   String parishName;
   String parishPriestName;
   String vicarName;
@@ -16,8 +16,8 @@ class Parish {
   String parishEmail;
   String parishForay;
   String parishVicariate;
-  List<Chapel> parishChapels;
-  Parish({
+  List<ChapelEntity> parishChapels;
+  ParishEntity({
     required this.parishName,
     required this.parishPriestName,
     required this.vicarName,
