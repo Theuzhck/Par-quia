@@ -1,0 +1,56 @@
+{
+    "data":[
+        {
+        "id": "1",
+        "paroquia": "NOSSA SENHORA DO PERPÉTUO DO SOCORRO - CONJ. ORLANDO DANTAS, ARACAJU-SE",
+        "arquidiocese": "Aracaju",
+        "vicariato": "São Mateus",
+        "forania":  "MÃE DO BOM CONSELHO",
+        "paroco":    "PE. MARCELO CONCEIÇÃO SANTOS",
+        "vigario": "Pe. FLÁVIO Eduardo Silva",
+        "endereco": "Rua José Araújo Neto, 500, Conjunto Orlando Dantas, Aracaju-SE, 49.042-250",
+        "telefone": "(79) 3251-3557",
+        "email": "gizeliam.gigi@gmail.com",
+        "instagram": null,
+        "facebook": null,
+        "youtube": null
+    }, 
+    {
+        "id": "2",
+        "paroquia": "PARÓQUIA BOM JESUS DOS NAVEGANTES - BAIRRO ATALAIA NOVA, BARRA DOS COQUEIROS-SE",
+        "arquidiocese": "Aracaju",
+        "vicariato": "São Pedro",
+        "forania":  "MÃE DA IGREJA",
+        "paroco":    "Pe. CLÁUDIO DIONÍZIO ROCHA SANTOS",
+        "vigario": "",
+        "endereco": "Praça da Matriz Bom Jesus dos Navegantes s/n Atalaia Nova, Barra dos Coqueiros-SE CEP 49140-000",
+        "telefone": "",
+        "email": "mariarodbispo@gmail.com",
+        "instagram": null,
+        "facebook": null,
+        "youtube": null
+    },
+    {
+        "id": "3",
+        "paroquia": "PARÓQUIA BOM JESUS DOS NAVEGANTES - BAIRRO ATALAIA, ARACAJU-SE",
+        "arquidiocese": "Aracaju",
+        "vicariato": "São Mateus",
+        "forania":  "MÃE DO SALVADOR",
+        "paroco":    "Pe. José GENIVALDO Garcia",
+        "vigario": "Pe. Pedro dos Santos Reis",
+        "endereco": "Av. Antônio Alves, 468 - Atalaia 49037-050",
+        "telefone": "(79) 3024-1055 /  99951-0626 ",
+        "email": " bomjesusatalaia@hotmail.com",
+        "instagram": null,
+        "facebook": "www.facebook.com/ParoquiaBomJesusNavegantes",
+        "youtube": null
+    }
+]
+    
+
+
+
+
+
+    
+}
