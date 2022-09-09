@@ -26,7 +26,6 @@ class _ListParishPageState extends State<ListParishPage> {
         await rootBundle.loadString('lib/assets/data/database-test.json');
     final data = await json.decode(response);
     setState(() {
-      print(data['data']);
       _items = data["data"];
     });
   }
@@ -49,7 +48,8 @@ class _ListParishPageState extends State<ListParishPage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => ModifyParishPage(
-                        title: 'Modificar Paróquia', id: _items[index]["id"]),
+                        title: 'Modificar Paróquia',
+                        id: int.parse(_items[index]["id"])),
                   ),
                 ),
                 child: Expanded(
