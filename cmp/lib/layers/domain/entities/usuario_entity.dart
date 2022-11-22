@@ -1,7 +1,5 @@
 import 'dart:ffi';
 
-import 'package:cmp/models/parish_model.dart';
-
 class UserEntity {
   String userName;
   DateTime lastConfession;

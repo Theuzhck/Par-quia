@@ -1,6 +1,6 @@
 class ParishModel {
-  int? id;
-  String? paroquia;
+  int? idIgreja;
+  String? nome;
   String? arquidiocese;
   String? vicariato;
   String? forania;
@@ -12,10 +12,11 @@ class ParishModel {
   String? instagram;
   String? facebook;
   String? youtube;
+  String? secretaria;
 
   ParishModel(
-      {this.id,
-      this.paroquia,
+      {this.idIgreja,
+      this.nome,
       this.arquidiocese,
       this.vicariato,
       this.forania,
@@ -26,11 +27,12 @@ class ParishModel {
       this.email,
       this.instagram,
       this.facebook,
-      this.youtube});
+      this.youtube,
+      this.secretaria});
 
   ParishModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    paroquia = json['paroquia'];
+    idIgreja = json['igreja']['idigreja'];
+    nome = json['igreja']['nome'];
     arquidiocese = json['arquidiocese'];
     vicariato = json['vicariato'];
     forania = json['forania'];
@@ -42,12 +44,30 @@ class ParishModel {
     instagram = json['instagram'];
     facebook = json['facebook'];
     youtube = json['youtube'];
+    secretaria = json['igreja']['secretaria'];
+  }
+
+  ParishModel.listToJson(List list) {
+    idIgreja = list[0];
+    nome = list[1];
+    secretaria = list[2];
+  }
+
+  List toList(ParishModel item) {
+    return [
+      'DEFAULT',
+      '\'${item.nome}\'',
+      item.secretaria == '' || item.secretaria == null
+          ? 'NULL'
+          : '\'${item.secretaria}\'',
+      '\'${item.nome}\''
+    ];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['paroquia'] = paroquia;
+    data['idIgreja'] = idIgreja;
+    data['paroquia'] = nome;
     data['arquidiocese'] = arquidiocese;
     data['vicariato'] = vicariato;
     data['forania'] = forania;
@@ -59,6 +79,7 @@ class ParishModel {
     data['instagram'] = instagram;
     data['facebook'] = facebook;
     data['youtube'] = youtube;
+    data['secretaria'] = secretaria;
     return data;
   }
 }
